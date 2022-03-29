@@ -1,0 +1,1 @@
+SELECT Id,Split,FechaEmision,FechaPago,Instrumento,Importe, SUM(Importe) OVER (PARTITION BY Id) AS ImporteOP FROM OPDetalle 
